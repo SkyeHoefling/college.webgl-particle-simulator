@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/model/cartoon
+END
+cartoon_vs.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/model/cartoon/cartoon_vs.js
+END
+cartoon_fs.js
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/model/cartoon/cartoon_fs.js
+END
+cartoon_callback.js
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/model/cartoon/cartoon_callback.js
+END

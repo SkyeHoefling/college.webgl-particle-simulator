@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/model/sepia
+END
+sepia_vs.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/model/sepia/sepia_vs.js
+END
+sepia_fs.js
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/model/sepia/sepia_fs.js
+END
+sepia_callback.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/model/sepia/sepia_callback.js
+END

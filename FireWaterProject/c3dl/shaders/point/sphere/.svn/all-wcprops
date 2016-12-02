@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/point/sphere
+END
+point_sphere_fs.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/point/sphere/point_sphere_fs.js
+END
+point_sphere_vs.js
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/point/sphere/point_sphere_vs.js
+END

@@ -1,0 +1,105 @@
+<html>
+	<head>
+			<script type="text/javascript" src="../GraphicUtilities/Vector.js"> </script>
+			<script type="text/javascript" src="Particle.js"> </script>
+			<script type="text/javascript" src="ParticleController.js"></script>
+			<script type="text/javascript" src="ParticleSystem.js"></script>
+			<script type="text/javascript" src="Plane.js"></script>
+			<script type="text/javascript" src="CollisionController.js"></script>
+			
+			<script type="text/javascript">
+			function testVector(){
+				var v = new Vector( 1.0, 1.0, 1.0 );
+				v = v.getNormalized();
+				alert( "testVector test complete" );
+			}
+
+			function testParticle(){
+				var p = new Particle( new Vector( 0.0, 0.0, 0.0 ),
+									  new Vector( 0.0, 0.0, 0.0 ),
+									  new Vector( 0.0, 0.0, 0.0 ) ); 
+				p.updateLocation( new Vector( 2, 2, 2 ) );
+				alert( "testParticle test complete" );
+			}
+			
+
+			function testParticleController(){
+				var pc = new ParticleController();
+				var systemName = "PC Test System" ;
+				pc.createSystem( systemName, "F", new Vector( 0.0, 0.0, 0.0 ), new Vector( 0.0, 0.0, 0.0 ) );
+				//pc.startSystem(systemName, 1000 );
+				alert( "testParticleController test complete" );
+			}
+
+			function testParticleSystem(){
+				var ps = new ParticleSystem( "Test System",
+											 "F",
+											 new Vector( 0.0, 0.0, 0.0 ),
+											 new Vector( 0.0, 1.0, 0.0 ));
+				alert( "testParticleSystem test complete" );
+			}
+			
+			function testPlane(){
+				
+				var v0 = new Vector( 0.0, 1.0, 0.0 );
+				var v1 = new Vector( 1.0, 1.0, 0.0 );
+				var v2 = new Vector( 1.0, 0.0, 0.0 );
+				var v3 = new Vector( 0.0, 0.0, 0.0 );
+				var pl = new Plane(v0, v1, v2, v3 );
+				alert( "testPlane test complete" );
+			}
+			
+			function testCollision(){
+				
+				var v0 = new Vector( 0.0, 1.0, 0.0 );
+				var v1 = new Vector( 1.0, 1.0, 0.0 );
+				var v2 = new Vector( 1.0, 0.0, 0.0 );
+				var v3 = new Vector( 0.0, 0.0, 0.0 );
+				var far = new Vector( 5.0, 5.0, 5.0 );
+				var planeArray = new Array();
+				
+				planeArray.push( new Plane(v0, v1, v2, v3 ));
+				planeArray.push( new Plane(v3, v2, v0, v1 ));
+				planeArray.push( new Plane(v1, v3, v0, v2 ));
+			
+				var p = new Particle( far, far, far );
+
+				
+				var cc = new CollisionController( planeArray );
+				var collision;// = cc.getCollision( p );
+
+				var p2 = new Particle( new Vector(0.5, 0.5, 0), far, far );
+
+				collision = cc.getCollision( p2 );
+				/*
+				if( collision == null ){
+					alert( "null" );
+				}else{
+					alert("collision result: " +  collision.toString() );
+				}*/
+				
+				alert( "testCollision test complete" );
+			}
+			
+			function testAll(){
+				testVector();
+				testParticle();
+				testParticleController();
+				testPlane();
+				testWorldController();
+				testCollision();
+			}
+			
+			</script>
+	</head>
+	<body>
+			<input type="button" onclick="testVector()" value="Test Vector"><br />
+			<input type="button" onclick="testParticle()" value="Test Particle"> <br />
+			<input type="button" onclick="testParticleSystem()" value = "Test Particle System"><br />
+			<input type="button" onclick="testParticleController()" value="Test Particle Controller"><br />
+			<input type="button" onclick="testPlane()" value="Test Plane"> <br />
+			<input type="button" onclick="testCollision()" value="Test CollisionController"><br/> <br/>
+			<input type="button" onclick="testAll()" value="Test All"><br />
+			
+	</body>
+</html>

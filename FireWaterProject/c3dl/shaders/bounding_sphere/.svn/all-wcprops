@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/bounding_sphere
+END
+bounding_sphere_fs.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/bounding_sphere/bounding_sphere_fs.js
+END
+bounding_sphere_vs.js
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/3/trunk/FireWaterProject/c3dl/shaders/bounding_sphere/bounding_sphere_vs.js
+END
